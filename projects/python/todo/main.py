@@ -35,7 +35,7 @@ class ToDoListManager:
 
 if __name__ == "__main__":
     manager = ToDoListManager()
-    manager.load_tasks("data/tasks.txt")
+    manager.load_tasks("tasks.txt")
 
     while True:
         print("\nToDo List Manager")
@@ -55,7 +55,7 @@ if __name__ == "__main__":
             task_name = input("Enter task name to mark as complete: ")
             manager.complete_task(task_name)
         elif choice == "4":
-            manager.save_tasks("data/tasks.txt")
+            manager.save_tasks("tasks.txt")
             print("Tasks saved. Exiting.")
             break
         else:
